@@ -1,5 +1,4 @@
 #Copyright (c)2023 btCode::Orange. All rights reserved.
-from fastapi import FastAPI, UploadFile, HTTPException, Depends
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import LlamaCpp
