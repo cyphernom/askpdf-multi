@@ -1,0 +1,141 @@
+/* Copyright (c)2023 btCode::Orange. All rights reserved.*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFEFEF;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="file"], 
+input[type="text"], 
+button {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box input {
+    flex: 1;
+    height: 60px;
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+}<!--Copyright (c)2023 btCode::Orange. All rights reserved.-->
+
+.user-message {
+    background-color: #e6f7ff;
+    align-self: flex-end;
+    color: #01579B;
+}
+
+.bot-message {
+    background-color: #f0f0f0;  /* Slightly different gray background for bot messages */
+    color: #3F51B5;
+}
+
+/* Styles for rendered Markdown within bot messages */
+.bot-message h1, .bot-message h2, .bot-message h3, .bot-message h4, .bot-message h5, .bot-message h6 {
+    color: #283593;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.bot-message p {
+    margin: 8px 0;
+}
+
+.bot-message a {
+    color: #3949AB;
+    text-decoration: none;
+}
+
+.bot-message a:hover {
+    text-decoration: underline;
+}
+
+.bot-message ul, .bot-message ol {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.bot-message li {
+    margin: 4px 0;
+}
+
+.bot-message blockquote {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-left: 4px solid #C5CAE9;
+    background-color: #EDE7F6;
+    color: #5C6BC0;
+}
+
+.bot-message code {
+    background-color: #ECEFF1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bot-message pre {
+    background-color: #ECEFF1;
+    padding: 8px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.bot-message hr {
+    margin: 12px 0;
+    border: 0;
+    border-top: 1px solid #C5CAE9;
+}
