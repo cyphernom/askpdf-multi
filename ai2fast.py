@@ -26,13 +26,13 @@ app.add_middleware(
 # Fix for some new weird "no attribute 'verbose'" bug
 langchain.verbose = False
 
-# Callback just to stream output to stdout, can be removed
-#callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
+# Callback just to stream output to stdout. Useful for debugging.
+callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
 
 llm = LlamaCpp(
     model_path="./llama-2-7b-chat.Q4_K_M.gguf",
     stop=["### Human:"],
- #   callback_manager=callback_manager,
+    callback_manager=callback_manager,
     verbose=True,
     n_ctx=4000,
     n_batch=512, n_gpu_layers=100, n_threads=6,
