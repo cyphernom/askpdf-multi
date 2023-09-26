@@ -18,7 +18,8 @@ A simple web application that allows users to upload PDFs and ask questions abou
 2. **Install Dependencies**
 
    Make sure you have the required libraries and dependencies installed.
-   Also make sure you have downloaded a GGUF file to run. The script is setup to run the file: https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/blob/main/llama-2-7b-chat.Q4_K_M.gguf at the moment, but any langchain supported model should be fine. 
+   Also make sure you have downloaded a GGUF file to run. The script is setup to run the file: https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/blob/main/llama-2-7b-chat.Q4_K_M.gguf at the moment, but any langchain supported model should be fine.
+   NB to run this, whilst theoretically can be done on CPU, it would be very slow. You really need a graphics card with a decent amount of VRAM (12gb would easily cover it, for example).
 
 4. **Run the Backend Server**
 
